@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 const stringElements = strangeArray.filter(item => typeof item === "string");
 
 // Ordenar elementos alfabéticamente
-const stringElementsOrd = stringElements.sort();
+const stringElementsOrd = stringElements.sort((a, b) => a.localeCompare(b));
 
 console.log(showList(stringElementsOrd));
 });
